@@ -26,10 +26,14 @@ class Parent{
     }
 }
 class child extends Parent{
+    @Override
+
     public void m1(){
         System.out.println("m1:child");
     }
+    @Override
     public void m2(){
+        super.m1();
         System.out.println("m2:child");
     }
 }
